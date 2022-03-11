@@ -19,8 +19,8 @@
         <h1> Příprava na praktickou prověrku</h1>
     </header>
     <main>
-       <ul><li><a href="#text">textové úpravy</a> </li></ul> 
-        <ul><li><a href="#tabulka">tabulka</a></li></ul>
+       <ul><li><a href="#text">textové úpravy</a> </li>
+       <li><a href="#tabulka">tabulka</a></li></ul>
         <section id="text">
             <h2>Textové úpravy </h2>
             <h3>Adresy používané na internetu</h3>
@@ -50,52 +50,56 @@
                 jména počítačů, která jsou automaticky převáděna na IP adresy (např. <a
                     href="https://www.seznam.cz/">www.seznam.cz</a>).</p>
             <h3>Seznam významných termínů a zkratek</h3>
-            <P><abbr title="Hypertext Markup Language">HTML</abbr><br>
-                Je v informatice název značkovacího jazyka používaného pro tvorbu webových stránek.<br>
-                <abbr title="HyperText Transfer Protocol">HTTP</abbr><br>
-                je internetový protokol určený pro komunikaci s WWW servery. Slouží pro přenos hypertextových dokumentů
-                ve formátu HTML.<br>
-                <b>Validátor</b> <br>
-            Validátor je počítačový program používaný ke kontrole platnosti nebo syntaktické správnosti fragmentu
-                kódu nebo dokumentu.<br>
-            <b>Server</b> <br>
-            Server je v informatice obecné označení pro počítač, který poskytuje nějaké služby, nebo počítačový program,
-            který tyto služby realizuje.
-            </P>
+            <dl>
+                <dt><abbr title="Hypertext Markup Language">HTML</abbr></dt>
+                <dd>- je v informatice název značkovacího jazyka používaného pro tvorbu webových stránek, které jsou propojeny hypertextovými odkazy.</dd>
+                <dt><abbr title="hypertext Transfer Protokol">HTTP</abbr></dt>
+                <dd>- internetový protokol určený pro komunikaci s WWW servery</dd>
+                <dt>Validátor</dt>
+                <dd>- kontrola validity stránek </dd>
+                <dt>Server</dt>
+                <dd> - počítač, který poskytuje nějaké služby, nebo počítačový program</dd>
+            </dl>
         </section>
         <section id="tabulka">
             <h2>Tabulka</h2>
             <table>
-                <tr>
-                    <th rowspan="2">Nečíslovaný seznam</th>
-                    <th colspan="2">Prvky stránky</th>
-                    <th rowspan="2">Obrázek</th>
-                </tr>
-                <tr>
-                    <th>Značky</th>
-                    <th>Entity</th>
-                </tr>
-                <tr>
-                    <td rowspan="2">
-                        <ul>
-                            <li>IP adresa</li>
-                            <li>Jmenná adresa</li>
-                            <li>URL</li>
-                        </ul>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Nečíslovaný seznam</th>
+                        <th colspan="2">Prvky stránek</th>
+                        <th rowspan="2">Obrázek</th>
+                    </tr>
+                    <tr>
+                        <th>Značky</th>
+                        <th>entity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">
+                            <ul>
+                                <li>IP adresa</li>
+                                <li>Jmenná adresa</li>
+                                <li>URL</li>
+                            </ul>
+                        </td>
+                        <td>H<sub>2</sub>O</td>
+                        <td>&</td>
+                        <td rowspan="2"><img alt="" src="img/pavouk.jfif"></td>
+                    </tr>
+                    <tr>
 
-                    </td>
-                    <td> H₂O</td>
-                    <td>&</td>
-                    <td rowspan="2"><img src="img/pavouk.jfif" alt="obrazek"></td>
-                </tr>
-                <tr>
-                    <td>c = a² + b²</td>
-                    <td>&copy;</td>
-                </tr>
-                <tr>
-                    <td>odkaz</td>
-                    <td colspan="3"> <a href="https://www.w3.org">www.w3c.org</a></td>
-                </tr>
+                        <td>c = a<sup>2</sup> + b<sup>2</sup></td>
+                        <td>&copy;</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Odkaz</td>
+                        <td colspan="3"><a href="https://www.w3schools.com/">www.w3c.org</a></td>
+                    </tr>
+                </tfoot>
             </table>
         </section>
     </main>
